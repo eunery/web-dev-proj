@@ -1,0 +1,41 @@
+.table {
+  margin: 100px 0px 140px 0px;
+}
+.table .table_header {
+  text-align: center;
+  margin: 0px 0px 29px 0px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2A496B;
+}
+.table .table__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: center;
+}
+.table .table__info li {
+  text-align: center;
+  margin-top: 114px;
+  flex: 33.333%;
+}
+.table .table__info li img {
+  width: 51px;
+  height: auto;
+  margin-bottom: 37px;
+}
+.table .table__info li h3 {
+  font-weight: 300;
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 28px;
+}
+.table .table__info li p {
+  font-size: 15px;
+  margin: 0px auto;
+  line-height: 20px;
+  width: 370px;
+}
+
+/*# sourceMappingURL=Content.css.map */

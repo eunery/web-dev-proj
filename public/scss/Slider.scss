@@ -1,0 +1,92 @@
+.header-slider {
+  color: #ffffff;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  z-index: 1;
+
+
+  .header-slider_container{
+    overflow: hidden;
+    .header-slider_track{
+      display: flex;
+      transition: .2s;
+      .header-slider__item {
+        align-items: center;
+        &:nth-child(2) img {
+          position: relative;
+          left: 150px;
+        }
+        &.active {
+          display: flex;
+          position: relative;
+        }
+        .header-slider__text {
+          width: 660px;
+          stroke-width: 30px;
+          margin-top: 31px;
+          h1 {
+            font-size: 64px;
+            line-height: 64px;
+            font-weight: bold;
+            margin-bottom: 18px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 24px;
+          }
+          .link {
+            margin-top: 90px;
+            display: block;
+            border: 1px solid #E5E31F;
+            border-radius: 10px;
+            padding: 15px 0px;
+            color: #000000;
+            background: #E5E31F;
+            text-decoration: none;
+            width: 240px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 18px;
+
+            &:hover {
+              transition: 0.5s;
+              background-color: #E5E31F;
+              color: #000000;
+            }
+          }
+        }
+        .header-slider__img{
+          img {
+            height: 612px;
+            width: auto;
+          }
+          line-height: 0px;
+        }
+      }
+    }
+  }
+
+  .slider-control{
+    .slider-control__list-slider-box {
+      position: absolute;
+      display: flex;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .slider-control__list-slider-box_slider-box {
+        content: '';
+        border: 3px solid #264160;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 4px;
+        margin: 0px 4px;
+        &.active {
+          background-color: #264160;
+        }
+      }
+    }
+  }
+
+}

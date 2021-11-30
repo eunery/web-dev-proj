@@ -1,0 +1,23 @@
+.info-menu {
+  padding: 55px 0px 87px 0px;
+  color: #ffffff;
+}
+.info-menu .info-menu__nav-menu {
+  display: flex;
+  justify-content: space-between;
+  line-height: 36px;
+}
+.info-menu .info-menu__nav-menu .info-menu__nav-menu_client img {
+  margin-right: 5px;
+}
+.info-menu .info-menu__nav-menu .info-menu__nav-menu_delivery a {
+  font-size: 15px;
+}
+.info-menu .info-menu__nav-menu .info-menu__nav-menu_address h2 {
+  color: #A9C5E0;
+  line-height: 19px;
+  width: 170px;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=Footer-menu.css.map */

@@ -1,0 +1,44 @@
+.table{
+  margin: 100px 0px 140px 0px;
+  .table_header{
+    text-align: center;
+    margin: 0px 0px 29px 0px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2A496B;
+  }
+  .table__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: center;
+    li{
+      text-align: center;
+      margin-top: 114px;
+      flex: 33.333%;
+      //.table__info_calcIcon{}
+      //.table__info_carIcon{}
+      //.table__info_handCoinIcon{}
+      //.table__info_pageIcon{}
+      //.table__info_passportIcon{}
+      img{
+        width: 51px;
+        height: auto;
+        margin-bottom: 37px;
+      }
+      h3{
+        font-weight: 300;
+        margin-bottom: 25px;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      p{
+        font-size: 15px;
+        margin: 0px auto;
+        line-height: 20px;
+        width: 370px;
+      }
+    }
+  }
+}
