@@ -1,4 +1,13 @@
+.content {
+  overflow: hidden;
+}
+.content a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
 .content .container {
+  z-index: -1;
   padding: 28px 135px 0px 135px;
 }
 .content header {

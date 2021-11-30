@@ -1,6 +1,12 @@
 .content{
-
+overflow: hidden;
+  a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
   .container{
+    z-index: -1;
     padding: 28px 135px 0px 135px;
   }
 

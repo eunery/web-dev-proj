@@ -2,32 +2,32 @@
   <div class="info-menu">
     <ul class="info-menu__nav-menu">
       <li class="info-menu__nav-menu_logo">
-        <a ref="">
+        <a href="/">
           <img src="@/assets/images/Header-footer/logoAndName.svg" alt="" />
         </a>
       </li>
       <li class="info-menu__nav-menu_client">
-        <a ref="">
+        <a href="/">
           О компании<br/>
         </a>
-        <a ref="">
+        <a href="/">
           Вакансии<br/>
         </a>
-        <a ref="">
+        <a href="/">
           Клиенту<br/>
         </a>
-        <a ref="">
+        <a href="/">
           Франчайзинг<br/>
         </a>
       </li>
       <li class="info-menu__nav-menu_delivery">
-        <a ref="">
+        <a href="/">
           Доставка из Китая<br/>
         </a>
-        <a ref="">
+        <a href="/">
           Все услуги<br/>
         </a>
-        <a ref="">
+        <a href="/">
           Акции<br/>
         </a>
       </li>
