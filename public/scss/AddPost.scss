@@ -1,6 +1,6 @@
 .add-post__form{
-  margin-top: 170px;
-  margin-bottom: 137px ;
+  padding-top: 170px;
+  padding-bottom: 137px ;
   .add-post__header{
     line-height: 53px;
     h1{
@@ -12,24 +12,14 @@
     }
   }
   .add-post__input{
-    margin-top: 59px;
+    padding-top: 59px;
     width: 765px;
-
-    .form__input_text{
-      text-align: right;
-      .form__input_text-count{
-        font-size: 12px;
-        line-height: 16px;
-      }
-    }
-    textarea{
+    .add-post__textarea{
       width: 765px;
       height: 140px;
       border-radius: 6px;
-      margin-bottom: 5px;
+      padding-bottom: 0px;
       resize: none;
-      &::-webkit-scrollbar{
-      }
       &::placeholder{
         padding: 20px 0px 0px 13px;
         font-size: 15px;
@@ -41,19 +31,25 @@
         }
       }
     }
+    .input__count{
+      text-align: right;
+      .input__count_text{
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
   }
-  .form__add-image{
-    margin-top: 12px;
+  .add-image{
+    padding-top: 19px;
     position: relative;
     .error{
       position: absolute;
-      top: 3px;
+      top: 22px;
       left: 31.6%;
-      p{
+      .error__text{
         color: #FF2323;
       }
     }
-
     .preview{
       .preview__image {
         position: absolute;
@@ -106,7 +102,7 @@
     }
   }
   .add-post__form__submit{
-    input{
+    .add-post__form__submit_button{
       cursor: pointer;
       margin-top: 109px;
       display: block;
@@ -130,27 +126,37 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .add-post__form{
-    margin-top: 171px;
-    .add-post__input{
-      margin-top: 57px;
+  .add-post__form {
+    padding-top: 171px;
+    .add-post__input {
+      padding-top: 57px;
       width: 732px;
-      textarea{
+      .add-post__textarea {
         width: 732px;
+        padding-bottom: 3px;
+      }
+    }
+    .add-image {
+      padding-top: 18px;
+      position: relative;
+      .error {
+        position: absolute;
+        top: 17px;
+        left: 31.6%;
       }
     }
   }
 }
 @media screen and (max-width: 375px) {
   .add-post__form{
-    margin-top: 96px;
-    margin-bottom: 107px;;
+    padding-top: 96px;
+    padding-bottom: 107px;;
     .add-post__header{
       line-height: 46px;
       h1{
         font-size: 32px;
         font-weight: bold;
-        margin-bottom: 17px;
+        padding-bottom: 17px;
       }
       p{
         font-size: 16px;
@@ -158,47 +164,31 @@
       }
     }
     .add-post__input{
-      margin-top: 25px;
+      padding-top: 25px;
       width: 340px;
-      textarea{
+      .add-post__textarea{
         width: 340px;
+        padding-bottom: 2px;
       }
     }
-    .form__add-image{
-      margin-top: 6px;
+    .add-image{
+      padding-top: 11px;
       .error{
-        top: 62px;
+        top: 73px;
         left: 2px;
         p{
         }
       }
-
       .preview{
         .preview__image {
           top: 55px;
           left: 0px;
         }
-        .preview__path{
-          .header__close-button{
-          }
-          .path__header{
-          }
-        }
-      }
-      .add-image__input{
-        &::-webkit-file-upload-button {
-        }
-        &:before{
-        }
-        &:hover:before {
-        }
       }
     }
     .add-post__form__submit{
-      input{
+      .add-post__form__submit_button{
         margin-top: 96px;
-        &:hover {
-        }
       }
     }
   }

@@ -1,8 +1,8 @@
 .table{
-  margin: 100px 0px 140px 0px;
-  .table_header{
+  padding: 100px 0px 140px 0px;
+  .table__header{
     text-align: center;
-    margin: 0px 0px 29px 0px;
+    padding: 0px 0px 29px 0px;
     font-size: 28px;
     font-weight: 600;
     color: #2A496B;
@@ -16,34 +16,28 @@
     li{
       text-align: center;
       max-width: 33.333%;
-      &.table__info_calcIcon{
+      &.table__info__calc-icon{
         img{
           width: 51px;
           height: 52px;
           margin-bottom: 33px;
         }
-        h3{
-        }
       }
-      &.table__info_carIcon{
-        margin: 118px 30px 0px 30px;
+      &.table__info__car-icon{
+        padding: 118px 30px 0px 30px;
         img{
           width: 67px;
           height: 49px;
         }
-        h3{
-        }
       }
-      &.table__info_handCoinIcon{
+      &.table__info__hand-coin-icon{
         img {
           width: 63px;
           height: 59px;
           margin-bottom: 29px;
         }
-        h3{
-        }
       }
-      &.table__info_pageIcon{
+      &.table__info__pageIcon{
         img{
           width: 54px;
           height: 54px;
@@ -53,9 +47,9 @@
           margin-bottom: 20px;
         }
       }
-      &.table__info_passportIcon{
-        margin-top: 106px;
-        margin-left: 30px;
+      &.table__info__passport-icon{
+        padding-top: 106px;
+        padding-left: 30px;
         img{
           width: 72px;
           height: 59px;
@@ -86,63 +80,50 @@
 
 @media screen and (max-width: 768px) {
   .table{
-    margin: 101px 0px 94px 0px;
-    .table_header{
-      margin: -3px 0px 29px 0px;
+    padding: 99px 0px 94px 0px;
+    .table__header{
+      padding: -3px 0px 29px 0px;
     }
     .table__info{
       justify-content: space-evenly;
       li{
         max-width: 50%;
-        //flex: 1 1 260px;
         p{
           width: 338px;
         }
-        &.table__info_calcIcon{
-          margin: 0px 0px 0px 0px;
+        &.table__info__calc-icon{
+          padding: 0px 0px 0px 0px;
           img{
             margin-bottom: 33px;
             margin-left: unset;
           }
           h3{
-            margin-bottom: 21px;
+            margin-bottom: 22px;
             margin-left: unset;
           }
         }
-        &.table__info_carIcon{
-          margin: 118px 0px 0px 22px;
+        &.table__info__car-icon{
+          padding: 118px 0px 0px 22px;
           img{
           }
           h3{
             margin-bottom: 23px;
           }
-          p{
-
-          }
         }
-        &.table__info_handCoinIcon{
-          margin: 110px 0px 0px 0px;
+        &.table__info__hand-coin-icon{
+          padding: 110px 0px 0px 0px;
           img {
-            //width: 63px;
-            //height: 59px;
-            //margin-bottom: 29px;
             margin-left: -18px;
             margin-top: 2px;
           }
           h3{
             margin-left: -20px;
-            margin-bottom: 23px;
+            margin-bottom: 22px;
             margin-top: 2px;
           }
-          p{
-
-          }
         }
-        &.table__info_pageIcon{
+        &.table__info__pageIcon{
           img{
-            //width: 54px;
-            //height: 54px;
-            //margin-bottom: 34px;
             margin-left: 15px;
           }
           h3{
@@ -150,19 +131,12 @@
             margin-left: 13px;
           }
         }
-        &.table__info_passportIcon{
-          margin-top: 87px;
-          margin-left: 0px;
-          img{
-            //width: 72px;
-            //height: 59px;
-          }
+        &.table__info__passport-icon{
+          padding-top: 87px;
+          padding-left: 0px;
           h3{
             margin-top: -3px;
             margin-bottom: 23px;
-          }
-          p{
-
           }
         }
       }
@@ -171,47 +145,40 @@
 }
 @media screen and (max-width: 375px){
   .table{
-    margin: 102px 0px 101px 0px;
-    .table_header{
-      margin: -3px 0px 29px 0px;
+    padding: 99px 0px 101px 0px;
+    .table__header{
+      padding: -3px 0px 29px 0px;
     }
     .table__info{
       justify-content: space-evenly;
       li{
         max-width: 100%;
-        //flex: 1 1 260px;
         p{
           width: 338px;
         }
-        &.table__info_calcIcon{
-          margin: 120px 0px 0px 0px;
+        &.table__info__calc-icon{
+          padding: 120px 0px 0px 0px;
           img{
             margin-bottom: 33px;
             margin-left: unset;
           }
           h3{
-            margin-bottom: 21px;
+            margin-bottom: 23px;
             margin-left: unset;
           }
         }
-        &.table__info_carIcon{
-          margin: 65px 0px 0px 0px;
+        &.table__info__car-icon{
+          padding: 65px 0px 0px 0px;
           img{
-            margin-bottom: 34px;
+            margin-bottom: 32px;
           }
           h3{
             margin-bottom: 23px;
           }
-          p{
-
-          }
         }
-        &.table__info_handCoinIcon{
-          margin: 63px 0px 0px 0px;
+        &.table__info__hand-coin-icon{
+          padding: 63px 0px 0px 0px;
           img {
-            //width: 63px;
-            //height: 59px;
-            //margin-bottom: 29px;
             margin-left: 0px;
             margin-top: 0px;
           }
@@ -220,15 +187,10 @@
             margin-bottom:22px;
             margin-top: 0px;
           }
-          p{
-
-          }
         }
-        &.table__info_pageIcon{
-          margin-top: 64px;
+        &.table__info__pageIcon{
+          padding: 64px;
           img{
-            //width: 54px;
-            //height: 54px;
             margin-bottom: 33px;
             margin-left: 0px;
           }
@@ -237,19 +199,14 @@
             margin-left: 0px;
           }
         }
-        &.table__info_passportIcon{
-          margin-top: 66px;
-          margin-left: 0px;
+        &.table__info__passport-icon{
+          padding-top: 3px;
+          padding-left: 0px;
           img{
-            //width: 72px;
-            //height: 59px;
           }
           h3{
             margin-top: -3px;
             margin-bottom: 23px;
-          }
-          p{
-
           }
         }
       }

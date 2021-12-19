@@ -1,6 +1,5 @@
 .wrapper {
   overflow: hidden;
-
   .modal {
     position: fixed;
     width: 100%;
@@ -8,8 +7,7 @@
     z-index: 1000;
     background: rgba(0, 0, 0, .20);
     display: none;
-
-    .content__modal-content {
+    .modal__content {
       width: 560px;
       height: 470px;
       background: #ffffff;
@@ -18,17 +16,14 @@
       left: calc(50% + -4px);
       transform: translate(-50%, -50%);
       border-radius: 6px;
-
       .modal__content__container {
         padding: 60px 60px 0px 60px;
         position: relative;
-
         .modal__button_close {
           position: absolute;
           top: 30px;
           right: 30px;
         }
-
         .modal__content_header {
           h1 {
             margin-top: 2px;
@@ -38,7 +33,6 @@
             font-weight: bold;
             margin-bottom: 18px;
           }
-
           p {
             font-size: 16px;
             line-height: 24px;
@@ -46,32 +40,29 @@
             margin-left: 9px;
           }
         }
-
         .modal__form {
           align-items: center;
-
           .form__inputs {
             display: flex;
             flex-direction: column;
             margin-left: 9px;
-          }
-
-          input {
-            width: 430px;
-            height: 48px;
-            border: 1px solid #23415E;
-            border-radius: 6px;
-            box-sizing: border-box;
-            padding-left: 16px;
-
-            &::placeholder {
-              font-size: 15px;
-              color: #D0C9D6;
+            .form__inputs_login {
+              margin-bottom: 10px;
             }
-          }
+            input {
+              width: 430px;
+              height: 48px;
+              border: 1px solid #23415E;
+              border-radius: 6px;
+              box-sizing: border-box;
+              padding-left: 16px;
 
-          .form__inputs_login {
-            margin-bottom: 10px;
+              &::placeholder {
+                font-size: 15px;
+                color: #D0C9D6;
+              }
+            }
+
           }
         }
 
@@ -92,7 +83,6 @@
   }
 
   .container {
-    //padding: 0px 135px 0px 135px;
     max-width: 1170px;
     box-sizing: border-box;
     margin-left: auto;
@@ -137,43 +127,10 @@
 }
 @media screen and (max-width: 768px) {
   .wrapper {
-
     .modal {
       background: #ffffff;
-
-      .content__modal-content {
+      .modal__content {
         left: calc(50% + 0px);
-
-        .modal__content__container {
-
-          .modal__button_close {
-          }
-
-          .modal__content_header {
-            h1 {
-            }
-
-            p {
-            }
-          }
-
-          .modal__form {
-
-            .form__inputs {
-            }
-
-            input {
-              &::placeholder {
-              }
-            }
-
-            .form__inputs_login {
-            }
-          }
-
-          .form__inputs_enter-button {
-          }
-        }
       }
     }
 
@@ -190,47 +147,33 @@
 
 @media screen and (max-width: 375px){
   .wrapper {
-
     .modal {
-
-      .content__modal-content {
+      .modal__content {
         left: calc(50% + -18px);
         width: 450px;
-
         .modal__content__container {
-
-          .modal__button_close {
-          }
-
           .modal__content_header {
-            h1 {
-            }
-
             p {
               margin-bottom: 24px;
               margin-left: 8px;
             }
           }
-
           .modal__form {
-
             .form__inputs {
               margin-left: 6px;
               margin-bottom: 2px;
-            }
-
-            input {
-              width: 347px;
-              &::placeholder {
+              .form__inputs_login {
+                margin-bottom: 8px;
+              }
+              input {
+                width: 347px;
+                &::placeholder {
+                }
               }
             }
-
-            .form__inputs_login {
-              margin-bottom: 8px;
-            }
           }
-
-          .form__inputs_enter-button {
+          .form__inputs_enter-button{
+            width: 350px;
           }
         }
       }

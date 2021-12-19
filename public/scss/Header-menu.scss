@@ -9,7 +9,7 @@
       opacity: 0.5;
     }
     .field__nav-menu__description {
-      margin-left: 80px;
+      padding-left: 80px;
       font-size: 13px;
       position: relative;
       &:before{
@@ -18,7 +18,7 @@
         position: absolute;
         width: 1px;
         height: 14px;
-        left: -17%;
+        left: 20%;
         top: -1px;
       }
     }
@@ -52,7 +52,7 @@
         top: -1px;
       }
       .phone__number{
-        margin-left: 10px;
+        padding-left: 10px;
         font-size: 13px;
       }
     }

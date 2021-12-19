@@ -11,7 +11,7 @@
   opacity: 0.5;
 }
 .field .field__nav-menu .field__nav-menu__description {
-  margin-left: 80px;
+  padding-left: 80px;
   font-size: 13px;
   position: relative;
 }
@@ -21,7 +21,7 @@
   position: absolute;
   width: 1px;
   height: 14px;
-  left: -17%;
+  left: 20%;
   top: -1px;
 }
 .field .field__nav-menu .field__nav-menu__enter-link .enter-link {
@@ -52,7 +52,7 @@
   top: -1px;
 }
 .field .field__nav-menu .field__nav-menu_phone .phone__number {
-  margin-left: 10px;
+  padding-left: 10px;
   font-size: 13px;
 }
 

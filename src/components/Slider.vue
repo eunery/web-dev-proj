@@ -60,7 +60,7 @@ export default {
       const buttons = this.$refs.controlBtn;
 
       const trst = 1.5;
-      const interval = 6000;
+      const interval = 6000000;
       let index = 0;
       let slideId;
 
