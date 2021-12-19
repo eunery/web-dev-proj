@@ -1,12 +1,12 @@
 <template>
   <div class="info-menu">
     <ul class="info-menu__nav-menu">
-      <li class="info-menu__nav-menu_logo">
+      <li class="info-menu__nav-menu__logo">
         <a href="/">
           <img src="@/assets/images/Header-footer/logoAndName.svg" alt="" />
         </a>
       </li>
-      <li class="info-menu__nav-menu_client">
+      <li class="info-menu__nav-menu__client">
         <a href="/">
           О компании<br/>
         </a>
@@ -20,7 +20,7 @@
           Франчайзинг<br/>
         </a>
       </li>
-      <li class="info-menu__nav-menu_delivery">
+      <li class="info-menu__nav-menu__delivery">
         <a href="/">
           Доставка из Китая<br/>
         </a>
@@ -31,7 +31,7 @@
           Акции<br/>
         </a>
       </li>
-      <li class="info-menu__nav-menu_address">
+      <li class="info-menu__nav-menu__address">
         <h2>
           manager@uexpress.ru
           <br>
@@ -51,6 +51,9 @@
 <script>
 export default {
   name: 'Footer-menu',
+  mounted() {
+    document.querySelector('.info-menu').classList.add('admin');
+  },
 };
 </script>
 

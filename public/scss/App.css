@@ -1,31 +1,158 @@
-.content {
+.wrapper {
   overflow: hidden;
 }
-.content a {
+.wrapper .modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.wrapper .modal .content__modal-content {
+  width: 560px;
+  height: 470px;
+  background: #ffffff;
+  position: relative;
+  top: 50%;
+  left: calc(50% - 4px);
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
+.wrapper .modal .content__modal-content .modal__content__container {
+  padding: 60px 60px 0px 60px;
+  position: relative;
+}
+.wrapper .modal .content__modal-content .modal__content__container .modal__button_close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.wrapper .modal .content__modal-content .modal__content__container .modal__content_header h1 {
+  margin-top: 2px;
+  margin-left: 9px;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.wrapper .modal .content__modal-content .modal__content__container .modal__content_header p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 47px;
+  margin-left: 9px;
+}
+.wrapper .modal .content__modal-content .modal__content__container .modal__form {
+  align-items: center;
+}
+.wrapper .modal .content__modal-content .modal__content__container .modal__form .form__inputs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 9px;
+}
+.wrapper .modal .content__modal-content .modal__content__container .modal__form input {
+  width: 430px;
+  height: 48px;
+  border: 1px solid #23415E;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding-left: 16px;
+}
+.wrapper .modal .content__modal-content .modal__content__container .modal__form input::placeholder {
+  font-size: 15px;
+  color: #D0C9D6;
+}
+.wrapper .modal .content__modal-content .modal__content__container .modal__form .form__inputs_login {
+  margin-bottom: 10px;
+}
+.wrapper .modal .content__modal-content .modal__content__container .form__inputs_enter-button {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 50px;
+  color: #2A4F71;
+  background: #E5E31F;
+  width: 430px;
+  height: 52px;
+  border-radius: 10px;
+  border: unset;
+  margin-left: 5px;
+}
+.wrapper .container {
+  max-width: 1170px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper header {
+  position: relative;
+}
+.wrapper header:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2B5276;
+}
+.wrapper main .slider {
+  background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
+}
+.wrapper footer .footer-menu {
+  background: #23415E;
+}
+.wrapper a {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
-.content .container {
-  z-index: -1;
-  padding: 28px 135px 0px 135px;
-}
-.content header {
+.wrapper .header-menu {
   position: relative;
-  z-index: 1;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
-.content header:before {
-  content: "";
-  position: absolute;
-  width: calc(100% + 150px);
-  height: 768px;
-  background: radial-gradient(75.49% 75.49% at 61.01% 75.77%, #376A9A 0%, #2B5276 100%);
-  z-index: -1;
-  top: -50px;
-  left: -150px;
+
+@media screen and (max-width: 768px) {
+  .wrapper .modal {
+    background: #ffffff;
+  }
+  .wrapper .modal .content__modal-content {
+    left: calc(50% + 0px);
+  }
+  .wrapper .container {
+    padding: 0px 15px 0px 15px;
+  }
+  .wrapper .header-menu {
+    background: #2B5276;
+    padding-top: 29px;
+    padding-bottom: 27px;
+  }
 }
-.content footer {
-  background: #23415E;
+@media screen and (max-width: 375px) {
+  .wrapper .modal .content__modal-content {
+    left: calc(50% - 18px);
+    width: 450px;
+  }
+  .wrapper .modal .content__modal-content .modal__content__container .modal__content_header p {
+    margin-bottom: 24px;
+    margin-left: 8px;
+  }
+  .wrapper .modal .content__modal-content .modal__content__container .modal__form .form__inputs {
+    margin-left: 6px;
+    margin-bottom: 2px;
+  }
+  .wrapper .modal .content__modal-content .modal__content__container .modal__form input {
+    width: 347px;
+  }
+  .wrapper .modal .content__modal-content .modal__content__container .modal__form .form__inputs_login {
+    margin-bottom: 8px;
+  }
+  .wrapper .container {
+    padding: 0px 15px 0px 15px;
+  }
+  .wrapper .header-menu {
+    background: #2B5276;
+    padding-top: 28px;
+    padding-bottom: 27px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

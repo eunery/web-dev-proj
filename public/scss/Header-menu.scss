@@ -1,11 +1,14 @@
-.field   {
+.field{
   display: flex;
   justify-content: space-between;
   .field__nav-menu {
     display: flex;
-    color: #A9C5E0;
     align-items: center;
-    .field__nav-menu_description {
+    .phone__number, .text{
+      color: #A9C5E0;
+      opacity: 0.5;
+    }
+    .field__nav-menu__description {
       margin-left: 80px;
       font-size: 13px;
       position: relative;
@@ -15,12 +18,12 @@
         position: absolute;
         width: 1px;
         height: 14px;
-        left: -25%;
+        left: -17%;
         top: -1px;
       }
     }
-    .field__nav-menu_enter-link {
-      .link{
+    .field__nav-menu__enter-link {
+      .enter-link{
         display: block;
         border: 1px solid #E5E31F;
         border-radius: 10px;
@@ -41,10 +44,71 @@
         }
       }
     }
-    .field__nav-menu_link-logo{
-      span{
+    .field__nav-menu_phone{
+      position: relative;
+      .phone__image{
+        position: absolute;
+        left: -13px;
+        top: -1px;
+      }
+      .phone__number{
         margin-left: 10px;
         font-size: 13px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .field{
+    &.admin {
+      .field__nav-menu.header__nav-menu_right{
+        .field__nav-menu_phone{
+          position: relative;
+          img{
+            position: absolute;
+            top: -8px;
+            left: -116px;
+          }
+          .phone__number{
+            position: absolute;
+            top: -6px;
+            left: -100px;
+          }
+        }
+      }
+      .field__nav-menu__description {
+        display: none;
+      }
+    }
+    .field__nav-menu.header__nav-menu_right{
+      .field__nav-menu_phone{
+        position: relative;
+        img{
+          position: absolute;
+          top: 61px;
+          left: 127px;
+        }
+        .phone__number{
+          position: absolute;
+          top: 62px;
+          right: -249px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .field{
+    .field__nav-menu{
+      .field__nav-menu__description, .field__nav-menu_phone{
+        display: none;
+      }
+      .field__nav-menu__enter-link{
+        .enter-link{
+          margin-left: 55px;
+          padding: 16px 0px;
+        }
       }
     }
   }

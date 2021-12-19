@@ -4,24 +4,27 @@
 }
 .field .field__nav-menu {
   display: flex;
-  color: #A9C5E0;
   align-items: center;
 }
-.field .field__nav-menu .field__nav-menu_description {
+.field .field__nav-menu .phone__number, .field .field__nav-menu .text {
+  color: #A9C5E0;
+  opacity: 0.5;
+}
+.field .field__nav-menu .field__nav-menu__description {
   margin-left: 80px;
   font-size: 13px;
   position: relative;
 }
-.field .field__nav-menu .field__nav-menu_description:before {
+.field .field__nav-menu .field__nav-menu__description:before {
   content: "";
   background: #A9C5E0;
   position: absolute;
   width: 1px;
   height: 14px;
-  left: -25%;
+  left: -17%;
   top: -1px;
 }
-.field .field__nav-menu .field__nav-menu_enter-link .link {
+.field .field__nav-menu .field__nav-menu__enter-link .enter-link {
   display: block;
   border: 1px solid #E5E31F;
   border-radius: 10px;
@@ -35,14 +38,63 @@
   font-size: 18px;
   margin-left: 77px;
 }
-.field .field__nav-menu .field__nav-menu_enter-link .link:hover {
+.field .field__nav-menu .field__nav-menu__enter-link .enter-link:hover {
   transition: 0.5s;
   background-color: #E5E31F;
   color: #000000;
 }
-.field .field__nav-menu .field__nav-menu_link-logo span {
+.field .field__nav-menu .field__nav-menu_phone {
+  position: relative;
+}
+.field .field__nav-menu .field__nav-menu_phone .phone__image {
+  position: absolute;
+  left: -13px;
+  top: -1px;
+}
+.field .field__nav-menu .field__nav-menu_phone .phone__number {
   margin-left: 10px;
   font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .field.admin .field__nav-menu.header__nav-menu_right .field__nav-menu_phone {
+    position: relative;
+  }
+  .field.admin .field__nav-menu.header__nav-menu_right .field__nav-menu_phone img {
+    position: absolute;
+    top: -8px;
+    left: -116px;
+  }
+  .field.admin .field__nav-menu.header__nav-menu_right .field__nav-menu_phone .phone__number {
+    position: absolute;
+    top: -6px;
+    left: -100px;
+  }
+  .field.admin .field__nav-menu__description {
+    display: none;
+  }
+  .field .field__nav-menu.header__nav-menu_right .field__nav-menu_phone {
+    position: relative;
+  }
+  .field .field__nav-menu.header__nav-menu_right .field__nav-menu_phone img {
+    position: absolute;
+    top: 61px;
+    left: 127px;
+  }
+  .field .field__nav-menu.header__nav-menu_right .field__nav-menu_phone .phone__number {
+    position: absolute;
+    top: 62px;
+    right: -249px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .field .field__nav-menu .field__nav-menu__description, .field .field__nav-menu .field__nav-menu_phone {
+    display: none;
+  }
+  .field .field__nav-menu .field__nav-menu__enter-link .enter-link {
+    margin-left: 55px;
+    padding: 16px 0px;
+  }
 }
 
 /*# sourceMappingURL=Header-menu.css.map */

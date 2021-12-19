@@ -1,6 +1,14 @@
 <template>
-  <Slider></Slider>
-  <Content></Content>
+  <div class="slider">
+    <div class="container">
+      <Slider></Slider>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="container">
+      <Content></Content>
+    </div>
+  </div>
 </template>
 
 <script>
